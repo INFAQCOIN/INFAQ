@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=INFAQCOIN
+Comment=INFAQCOIN P2P Cryptocurrency
+Comment[fr]=INFAQCOIN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=INFAQCOIN, eşten eşe kriptografik sanal para birimi
+Exec=infaqcoin-qt %u
+Terminal=false
+Type=Application
+Icon=infaqcoin128
+MimeType=x-scheme-handler/infaqcoin;
+Categories=Office;Finance;
+StartupWMClass=infaqcoin-qt

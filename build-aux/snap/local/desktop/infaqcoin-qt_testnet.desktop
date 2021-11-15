@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=INFAQCOIN
+Comment=INFAQCOIN QT test network
+GenericName=INFAQCOIN Digital Currency QT client testnet network
+Exec=infaqcoin-core.qt-testnet %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/infaqcoin_testnet.png
+MimeType=x-scheme-handler/iqc;
+Categories=X-Office;X-Finance;
+Keywords=internet;infaqcoin;tiqc;core;wallet;qt;testnet;snap;launchpad;crypto;digital;currency;coin;token;
+Version=1.0

@@ -1,0 +1,157 @@
+
+## <summary>policy for infaqcoin</summary>
+
+
+########################################
+## <summary>
+##	Transition to infaqcoin.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`infaqcoin_domtrans',`
+	gen_require(`
+		type infaqcoin_t, infaqcoin_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, infaqcoin_exec_t, infaqcoin_t)
+')
+
+
+########################################
+## <summary>
+##	Execute infaqcoin server in the infaqcoin domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`infaqcoin_initrc_domtrans',`
+	gen_require(`
+		type infaqcoin_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, infaqcoin_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search infaqcoin lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`infaqcoin_search_lib',`
+	gen_require(`
+		type infaqcoin_var_lib_t;
+	')
+
+	allow $1 infaqcoin_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read infaqcoin lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`infaqcoin_read_lib_files',`
+	gen_require(`
+		type infaqcoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, infaqcoin_var_lib_t, infaqcoin_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage infaqcoin lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`infaqcoin_manage_lib_files',`
+	gen_require(`
+		type infaqcoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, infaqcoin_var_lib_t, infaqcoin_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage infaqcoin lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`infaqcoin_manage_lib_dirs',`
+	gen_require(`
+		type infaqcoin_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, infaqcoin_var_lib_t, infaqcoin_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a infaqcoin environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`infaqcoin_admin',`
+	gen_require(`
+		type infaqcoin_t;
+		type infaqcoin_initrc_exec_t;
+		type infaqcoin_var_lib_t;
+	')
+
+	allow $1 infaqcoin_t:process { ptrace signal_perms };
+	ps_process_pattern($1, infaqcoin_t)
+
+	infaqcoin_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 infaqcoin_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, infaqcoin_var_lib_t)
+
+')
+

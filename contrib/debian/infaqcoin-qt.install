@@ -1,0 +1,6 @@
+usr/local/bin/infaqcoin-qt usr/bin
+share/pixmaps/infaqcoin32.xpm usr/share/pixmaps
+share/pixmaps/infaqcoin16.xpm usr/share/pixmaps
+share/pixmaps/infaqcoin128.png usr/share/pixmaps
+debian/infaqcoin-qt.desktop usr/share/applications
+debian/infaqcoin-qt.protocol usr/share/kde4/services/
