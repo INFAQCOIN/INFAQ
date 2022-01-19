@@ -112,7 +112,7 @@ gpg --output ${VERSION}-win-unsigned/$NAME/infaqcoin-win-${VERSION%\.*}-build.as
 Uploading Signatures
 --------------------
 Make a Pull Request (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs](https://github.com/infaqcoin-project/gitian.sigs/) repository:
+[gitian.sigs](https://github.com/INFAQCOIN/gitian.sigs/) repository:
 
 ```bash
 git checkout -b ${VERSION}-not-codesigned

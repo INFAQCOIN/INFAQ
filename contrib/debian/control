@@ -29,8 +29,8 @@ Build-Depends: debhelper,
  dh-systemd
 Standards-Version: 3.9.2
 Homepage: http://www.infaqcoin.org
-Vcs-Git: git://github.com/INFAQCOIN-Project/INFAQCOIN.git
-Vcs-Browser: http://github.com/INFAQCOIN-Project/INFAQCOIN
+Vcs-Git: git://github.com/INFAQCOIN/INFAQ.git
+Vcs-Browser: http://github.com/INFAQCOIN/INFAQ
 
 Package: infaqcoind
 Architecture: any

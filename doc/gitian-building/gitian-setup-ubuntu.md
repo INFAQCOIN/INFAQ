@@ -32,10 +32,10 @@ git config --global user.email "MY_NAME@example.com"
 Fetching the Build Script
 --------------------------
 
-The build script we'll be using is contained in the INFAQCOIN github repository ([contrib/gitian-build.py](https://github.com/infaqcoin-project/infaqcoin/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the INFAQCOIN repository and will need to fetch this script with the following commands:
+The build script we'll be using is contained in the INFAQCOIN github repository ([contrib/gitian-build.py](https://github.com/INFAQCOIN/INFAQ/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the INFAQCOIN repository and will need to fetch this script with the following commands:
 
 ```bash
-curl -L -O https://raw.githubusercontent.com/INFAQCOIN-Project/INFAQCOIN/master/contrib/gitian-build.py
+curl -L -O https://raw.githubusercontent.com/INFAQCOIN/INFAQ/master/contrib/gitian-build.py
 chmod +x gitian-build.py
 ```
 
