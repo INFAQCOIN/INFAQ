@@ -1686,9 +1686,9 @@ Are you sure?</source>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/infaqcoin-project/infaqcoin-project-translations</source>
+https://www.transifex.com/INFAQCOIN/INFAQ-project-translations</source>
         <translation>语言缺失或翻译不完整?帮助贡献翻译在这里:
-https://www.transifex.com/infaqcoin-project/infaqcoin-project-translations</translation>
+https://www.transifex.com/INFAQCOIN/INFAQ-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>

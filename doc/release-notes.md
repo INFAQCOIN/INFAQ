@@ -1,8 +1,8 @@
-INFAQCOIN version v5.2.0 is now available from:  <https://github.com/infaqcoin-project/infaqcoin/releases>
+INFAQCOIN version v5.2.0 is now available from:  <https://github.com/INFAQCOIN/INFAQ/releases>
 
 This is a new major version release, including various bug fixes and visual improvements.
 
-Please report bugs using the issue tracker at github: <https://github.com/infaqcoin-project/infaqcoin/issues>
+Please report bugs using the issue tracker at github: <https://github.com/INFAQCOIN/INFAQ/issues>
 
 Mandatory Update
 ==============
@@ -96,4 +96,4 @@ Thanks to everyone who directly contributed to this release:
 - Volodia
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/infaqcoin-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/INFAQCOIN-translations/), the QA team during Testing and the Node hosts supporting our Testnet.

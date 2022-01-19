@@ -106,7 +106,7 @@ parts:
       - fcitx-frontend-qt5
 
   infaqcoin-core:
-    source: https://github.com/INFAQCOIN-Project/INFAQCOIN
+    source: https://github.com/INFAQCOIN/INFAQ
     source-type: git
     source-tag: master
     plugin: nil

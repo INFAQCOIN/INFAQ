@@ -28,7 +28,7 @@ Drag INFAQCOIN-Qt to your applications folder, and then run INFAQCOIN-Qt.
 
 ### Need Help?
 
-* See the documentation at the [INFAQCOIN Wiki](https://github.com/INFAQCOIN-Project/INFAQCOIN/wiki)
+* See the documentation at the [INFAQCOIN Wiki](https://github.com/INFAQCOIN/INFAQ/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [INFAQCOIN Forum](http://forum.infaqcoin.org/).
 * Join our Discord server [Discord Server](https://discord.infaqcoin.org)

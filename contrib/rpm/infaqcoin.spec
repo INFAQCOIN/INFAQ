@@ -24,18 +24,18 @@ URL:		https://infaqcoin.org/
 Source0:	https://infaqcoin.org/bin/infaqcoin-core-%{version}/infaqcoin-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/contrib/debian/examples/infaqcoin.conf
+Source10:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/contrib/debian/examples/infaqcoin.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/doc/man/infaqcoind.1
-Source21:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/doc/man/infaqcoin-cli.1
-Source22:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/doc/man/infaqcoin-qt.1
+Source20:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/doc/man/infaqcoind.1
+Source21:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/doc/man/infaqcoin-cli.1
+Source22:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/doc/man/infaqcoin-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/contrib/rpm/infaqcoin.te
+Source30:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/contrib/rpm/infaqcoin.te
 # Source31 - what about infaqcoin-tx and bench_infaqcoin ???
-Source31:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/contrib/rpm/infaqcoin.fc
-Source32:	https://raw.githubusercontent.com/infaqcoin-project/infaqcoin/v%{version}/contrib/rpm/infaqcoin.if
+Source31:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/contrib/rpm/infaqcoin.fc
+Source32:	https://raw.githubusercontent.com/INFAQCOIN/INFAQ/v%{version}/contrib/rpm/infaqcoin.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 
